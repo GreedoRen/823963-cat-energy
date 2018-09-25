@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nikita Anikin](https://up.htmlacademy.ru/adaptive/15/user/823963).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мирошниченко](https://up.htmlacademy.ru/htmlcss/22/user/591417)
 
 ---
 

@@ -29,19 +29,22 @@
     <h1 class="page-form__headline">Подбор программы</h1>
     <p class="page-form__questionary-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form method="post" action="https://echo.htmlacademy.ru" class="page-form__main">
+
       <fieldset class="page-form__fieldset">
-        <label for="cat-name" class="page-form__fieldset-name">Имя:*</label>
-        <input type="text" class="page-form__fieldset-name-input" name="cat-name" id="cat-name" placeholder="Барсик">
+        <div class="cat-profile">
+          <label for="cat-name" class="cat-profile__label-name">Имя:*</label>
+          <input type="text" class="cat-profile__input-name" name="cat-name" id="cat-name" placeholder="Барсик">
 
-        <label for="cat-weight" class="page-form__fieldset-weight">Вес(Кг):*</label>
-        <input type="text" class="page-form__fieldset-weight-input" name="cat-weight" id="cat-weight" placeholder="7">
+          <label for="cat-weight" class="cat-profile__label-weight">Вес(Кг):*</label>
+          <input type="text" class="cat-profile__input-weight" name="cat-weight" id="cat-weight" placeholder="7">
 
-        <label for="cat-old" class="page-form__fieldset-old">Возраст(Лет):*</label>
-        <input type="text" class="page-form__fieldset-old-input" name="cat-old" id="cat-old" placeholder="7">
+          <label for="cat-old" class="cat-profile__label-old">Возраст(Лет):*</label>
+          <input type="text" class="cat-profile__input-old" name="cat-old" id="cat-old" placeholder="7">
+        </div>
       </fieldset>
 
       <fieldset class="page-form__fieldset">
-        <ul class="page-form__fieldset-program program">
+        <ul class="program">
           <li class="program__item">
             <input type="radio" class="program__input" name="less" id="less" value="less">
             <label for="less" class="program__label">Похудение</label>
@@ -57,22 +60,24 @@
         </ul>
       </fieldset>
 
-      <fieldset class="page-form__fieldset mail-phone">
-        <legend class="page-form__legend">Контактные данные (владельца кота)</legend>
-        <label for="mail-input" class="mail-phone__label-mail">E-mail:*</label>
-        <input type="email" class="mail-phone__input-mail" id="mail-input" name="mail-input" placeholder="kuklachev@gmail.com">
+      <fieldset class="page-form__fieldset">
+        <div class="mail-phone">
+          <legend class="headline">Контактные данные (владельца кота)</legend>
+          <label for="mail-input" class="mail-phone__label-mail">E-mail:*</label>
+          <input type="email" class="mail-phone__input-mail" id="mail-input" name="mail-input" placeholder="kuklachev@gmail.com">
 
-        <label for="phone" class="mail-phone__label-phone">Телефон:*</label>
-        <input type="text" class="mail-phone__input-phone" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+          <label for="phone" class="mail-phone__label-phone">Телефон:*</label>
+          <input type="text" class="mail-phone__input-phone" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+        </div>
       </fieldset>
 
       <fieldset class="page-form__fieldset">
-        <legend class="page-form__legend">Комментарий</legend>
+        <legend class="headline">Комментарий</legend>
         <textarea class="page-form__textarea">Расскажите обо всех повадках кота</textarea>
       </fieldset>
 
       <fieldset class="page-form__fieldset">
-        <legend class="page-form__legend">Дополнительно</legend>
+        <legend class="headline">Дополнительно</legend>
         <ul class="page-form__fieldset-add additionally">
           <li class="additionally__item">
             <input type="checkbox" class="additionally__input" id="sweetener" name="sweetener">
@@ -93,13 +98,24 @@
         </ul>
       </fieldset>
 
-      <button type="button" class="button">Отправить заявку</button>
+      <button type="submit" class="button">Отправить заявку</button>
       <p class="page-form__request-text">* - Обязательные поля</p>
     </form>
   </main>
 
 
   <footer class="main-footer">
+
+    <section class="contacts">
+      <h2 class="contacts__headline visually-hidden">Контакты</h2>
+      <div class="contacts__list">
+        <h3 class="contacts__cooperation">Приглашаем к сотрудничеству дилеров!</h3>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+      </div>
+      <img class="contacts__map" src="http://placehold.it/320x400" width="320" height="400" alt="Карта">
+    </section>
+
     <p class="main-footer__svg">CAT ENERGY</p>
 
     <ul class="main-footer__social social">
@@ -123,4 +139,5 @@
   </footer>
 
 </body>
+
 </html>

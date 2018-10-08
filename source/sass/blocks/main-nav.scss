@@ -1,6 +1,4 @@
 .main-nav {
-  margin: 0 auto;
-
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
@@ -9,5 +7,6 @@
 
   &__menu {
     list-style: none;
+    margin-bottom: 16px;
   }
 }

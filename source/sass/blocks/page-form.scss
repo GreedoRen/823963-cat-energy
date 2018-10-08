@@ -1,0 +1,21 @@
+.page-form {
+  background-color: #ffffff;
+
+  &__fieldset {
+    border: none;
+  }
+
+  &__questionary-text {
+    color: #111111;
+  }
+
+  &__headline {
+    font-size: 24px;
+    line-height: 24px;
+    color: #111111;
+  }
+
+  &__request-text {
+    line-height: 16px;
+  }
+}

@@ -3,25 +3,25 @@
   color: #111111;
 
   font-weight: normal;
+}
 
-  &__slim-pro {
-    background-color: #f2f2f2;
-  }
+.categories__slim-pro {
+  background-color: #f2f2f2;
+}
 
-  &__topic {
-    font-size: 24px;
-    line-height: 37.02px;
-  }
+.categories__topic {
+  font-size: 24px;
+  line-height: 37.02px;
+}
 
-  &__text {
-    font-family: "Arial", serif;
-    color: #444444;
-  }
+.categories__text {
+  font-family: "Arial", serif;
+  color: #444444;
+}
 
-  &__link {
-    color: #111111;
-    font-size: 24px;
-    line-height: 37.02px;
-    text-decoration: none;
-  }
+.categories__link {
+  color: #111111;
+  font-size: 24px;
+  line-height: 37.02px;
+  text-decoration: none;
 }

@@ -1,4 +1,6 @@
 .categories {
+  width: 320px;
+
   background-color: #ffffff;
   color: #111111;
 
@@ -24,6 +26,8 @@
 }
 
 .categories__text {
+  font-size: 14px;
+  line-height: 18px;
   font-family: "Arial", serif;
   color: #444444;
 }

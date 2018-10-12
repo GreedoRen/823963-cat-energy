@@ -1,8 +1,15 @@
 .advantages-list__item {
   list-style: none;
+  display: flex;
 }
 
 .advantages-list__text {
   font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
+}
+
+.advantages-list__image {
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
 }

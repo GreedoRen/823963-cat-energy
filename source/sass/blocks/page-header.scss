@@ -4,4 +4,22 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: medium;
+
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__logo {
+  width: 75%;
+}
+
+.page-header__logo-image {
+  width: 200px;
+  height: 45px;
+}
+
+@media (min-width: 768px) {
+  
 }

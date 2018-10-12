@@ -8,6 +8,14 @@
 
 .before-after__weight-time {
   list-style: none;
+  display: flex;
+}
+
+.before-after__spent {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
 }
 
 .before-after__uppertext {
@@ -27,6 +35,8 @@
   font-size: 14px;
   line-height: 20px;
   color: #111111;
+
+  text-align: center;
 }
 
 .before-after__label {
@@ -37,4 +47,6 @@
 
 .before-after__radio-btn {
   border: none;
+
+  text-align: center;
 }

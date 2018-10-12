@@ -6,6 +6,20 @@
 
   color: #ffffff;
   font-weight: regular;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  text-align: center;
+
+  width: 320px;
+}
+
+.promo__head {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .promo__headline {

@@ -9,16 +9,14 @@
 .main-nav__menu {
   list-style: none;
   margin-bottom: 16px;
+
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__toggle {
   margin-left: 20px;
   visibility: hidden;
-}
-
-.main-nav__menu {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
 }

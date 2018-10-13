@@ -8,22 +8,17 @@
   font-weight: medium;
 
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
 }
 
-// .page-header__logo {
-//   width: 75%;
-// }
+.page-header__logo {
+  width: 75%;
+}
 
-// .page-header__logo-image {
-//   width: 200px;
-//   height: 45px;
-// }
-
-@media (min-width: 768px) {
-  .page-header {
-    width: 768px;
-  }
+.page-header__logo-image {
+  width: 200px;
+  height: 45px;
 }

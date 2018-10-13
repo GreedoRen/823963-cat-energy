@@ -1,8 +1,2 @@
 $tablet: 768px;
 $desktop: 1300px;
-
-@mixin tablet($padding: 30px, $width: 768px) {
-  padding-left: $padding;
-  padding-right: $padding;
-  width: $width;
-}

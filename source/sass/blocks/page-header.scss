@@ -11,14 +11,27 @@
   flex-wrap: wrap;
 
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .page-header__logo {
-  width: 75%;
+  display: flex;
+  align-items: center;
 }
 
 .page-header__logo-image {
-  width: 200px;
-  height: 45px;
+  // width: 200px;
+  // height: 45px;
+}
+
+@media (min-width: $tablet) {
+  .page-header {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .page-header__logo-image {
+    width: 192px;
+    height: 68px;
+  }
 }

@@ -22,3 +22,32 @@
   line-height: 20px;
   color: #444444;
 }
+
+@media (min-width: $tablet) {
+  .contacts {
+    width: 768px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .contacts__cooperation {
+    font-size: 20px;
+    line-height: 25px;
+    color: #111111;
+
+    width: 25%;
+  }
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+
+    width: 25%;
+
+    margin-left: auto;
+  }
+
+  .contacts__map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+  }
+}

@@ -6,6 +6,7 @@
 
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 40px;
 }
 
 .categories__wrapper {
@@ -36,4 +37,38 @@
   font-size: 24px;
   line-height: 37.02px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .categories__slim-pro {
+    width: 708px;
+    margin-top: 30px;
+
+    background-color: #f2f2f2;
+  }
+
+  .categories__topic {
+    font-size: 36px;
+    line-height: 37.02px;
+  }
+
+  .categories__text {
+    width: 50%;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial", serif;
+    color: #444444;
+  }
+
+  .categories__logo {
+    background-color: #68b738;
+    border-radius: 50%;
+
+    width: 200px;
+    height: 200px;
+
+    align-content: flex-end;
+    order: 2;
+  }
 }

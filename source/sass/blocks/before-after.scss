@@ -51,3 +51,43 @@
 
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .before-after {
+    background-color: #ffffff;
+    width: 768px;
+  }
+
+  .before-after__wrapper {
+    display: flex;
+  }
+
+  .before-after__weight-time {
+    width: 50%;
+  }
+
+  .before-after__spent {
+    padding-left: 20px;
+  }
+
+  .before-after__image-wrapper {
+    width: 708px;
+    height: 536px;
+  }
+
+  .before-after__image-before {
+    background-image: url("../img/before-tablet@1x.png");
+    width: 690px;
+    height: 517px;
+    background-color: black;
+  }
+
+  .before-after__image-after {
+    background-image: url("../img/after-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 690px;
+    height: 519px;
+    background-color: black;
+  }
+}

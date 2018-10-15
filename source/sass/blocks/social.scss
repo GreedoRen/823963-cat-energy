@@ -1,7 +1,50 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  width: 320px;
+}
+
 .social__item {
   list-style: none;
 }
 
-.socail__link--vlontakte {
-  background-image: url("../img/icon-vk-mobile.svg");
+.socail__link--vlontakte-mobile {
+  padding-right: 40px;
+
+}
+
+.socail__link--facebook-mobile {
+  padding-left: 40px;
+
+}
+
+.socail__link--vlontakte-desktop {
+  display: none;
+}
+
+.socail__link--instagram-desktop {
+  display: none;
+}
+
+.socail__link--facebook-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    width: 768px;
+  }
+
+  .socail__link--vlontakte-mobile,
+  .socail__link--instagram-mobile,
+  .socail__link--facebook-mobile {
+    display: none;
+  }
+
+  .socail__link--vlontakte-desktop,
+  .socail__link--instagram-desktop,
+  .socail__link--facebook-desktop {
+    display: block;
+  }
 }

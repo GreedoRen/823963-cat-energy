@@ -58,12 +58,17 @@
     width: 768px;
   }
 
-  .before-after__wrapper {
+   .before-after__wrapper-out {
     display: flex;
-  }
+    flex-wrap: wrap;
+   }
+
+   .before-after__text {
+     width: 100%;
+   }
 
   .before-after__weight-time {
-    width: 50%;
+     width: 50%;
   }
 
   .before-after__spent {
@@ -89,5 +94,22 @@
     width: 690px;
     height: 519px;
     background-color: black;
+  }
+}
+
+@media (min-width: $desktop) {
+  .before-after {
+    width: 1220px;
+    padding: 0 60px;
+  }
+
+  .before-after__wrapper-out {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+  }
+
+  .before-after__cost {
+    text-align: left;
   }
 }

@@ -24,3 +24,16 @@
     padding-right: 120px;
   }
 }
+
+@media (min-width: $desktop) {
+  .advantages {
+    width: 1220px;
+    padding: 0 60px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}

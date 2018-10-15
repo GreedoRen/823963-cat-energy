@@ -9,6 +9,7 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0 20px;
@@ -19,10 +20,10 @@
   align-items: center;
 }
 
-.page-header__logo-image {
-  // width: 200px;
-  // height: 45px;
-}
+// .page-header__logo-image {
+//   width: 200px;
+//   height: 45px;
+// }
 
 @media (min-width: $tablet) {
   .page-header {
@@ -33,5 +34,12 @@
   .page-header__logo-image {
     width: 192px;
     height: 68px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-header {
+    width: 1220px;
+    padding: 0 60px;
   }
 }

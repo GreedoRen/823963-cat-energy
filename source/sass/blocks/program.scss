@@ -1,3 +1,12 @@
 .program__item {
+  display: flex;
   list-style: none;
+}
+
+@media (min-width: $desktop) {
+  .program {
+    width: 50%;
+
+    // flex-direction: column;
+  }
 }

@@ -19,3 +19,13 @@
 .page-form__request-text {
   line-height: 16px;
 }
+
+@media (min-width: $desktop) {
+  .page-form__wrapper {
+    display: flex;
+  }
+
+  .page-form__button-wrapper {
+    display: flex;
+  }
+}

@@ -2,4 +2,19 @@
   font-size: 16px;
   line-height: 18px;
   color: #222222;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+}
+
+@media (min-width: $desktop) {
+  .profile {
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .profile--contact {
+    flex-direction: row;
+  }
 }

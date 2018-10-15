@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Анкета Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -29,40 +31,40 @@
     <h1 class="head form__title">Подбор программы</h1>
     <p class="page-form__questionary-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form method="post" action="https://echo.htmlacademy.ru" class="page-form__main">
+      <div class="page-form__wrapper">
+        <fieldset class="page-form__fieldset">
+          <div class="profile">
+            <label for="cat-name" class="profile__label-name">Имя:*</label>
+            <input type="text" class="profile__input-name" name="cat-name" id="cat-name" placeholder="Барсик">
 
-      <fieldset class="page-form__fieldset">
-        <div class="profile">
-          <label for="cat-name" class="profile__label-name">Имя:*</label>
-          <input type="text" class="profile__input-name" name="cat-name" id="cat-name" placeholder="Барсик">
+            <label for="cat-weight" class="profile__label-weight">Вес(Кг):*</label>
+            <input type="text" class="profile__input-weight" name="cat-weight" id="cat-weight" placeholder="7">
 
-          <label for="cat-weight" class="profile__label-weight">Вес(Кг):*</label>
-          <input type="text" class="profile__input-weight" name="cat-weight" id="cat-weight" placeholder="7">
+            <label for="cat-old" class="profile__label-old">Возраст(Лет):*</label>
+            <input type="text" class="profile__input-old" name="cat-old" id="cat-old" placeholder="7">
+          </div>
+        </fieldset>
 
-          <label for="cat-old" class="profile__label-old">Возраст(Лет):*</label>
-          <input type="text" class="profile__input-old" name="cat-old" id="cat-old" placeholder="7">
-        </div>
-      </fieldset>
-
-      <fieldset class="page-form__fieldset">
-        <ul class="program">
-          <li class="program__item">
-            <input type="radio" class="program__input" name="less" id="less" value="less">
-            <label for="less" class="program__label">Похудение</label>
-          </li>
-          <li class="program__item">
-            <input type="radio" class="program__input" name="mass" id="mass" value="mass">
-            <label for="mass" class="program__label">Набор массы</label>
-          </li>
-          <li class="program__item">
-            <input type="radio" class="program__input" name="guid" id="guid" value="guid">
-            <label for="guid" class="program__label">Не знаю (Нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
-
+        <fieldset class="page-form__fieldset">
+          <ul class="program">
+            <li class="program__item">
+              <input type="radio" class="program__input" name="less" id="less" value="less">
+              <label for="less" class="program__label">Похудение</label>
+            </li>
+            <li class="program__item">
+              <input type="radio" class="program__input" name="mass" id="mass" value="mass">
+              <label for="mass" class="program__label">Набор массы</label>
+            </li>
+            <li class="program__item">
+              <input type="radio" class="program__input" name="guid" id="guid" value="guid">
+              <label for="guid" class="program__label">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="page-form__fieldset">
         <legend class="page-form__headline">Контактные данные (владельца кота)</legend>
-        <div class="profile">
+        <div class="profile profile--contact">
           <label for="mail-input" class="profile__label-mail">E-mail:*</label>
           <input type="email" class="profile__input-mail" id="mail-input" name="mail-input" placeholder="kuklachev@gmail.com">
 
@@ -98,8 +100,10 @@
         </ul>
       </fieldset>
 
-      <button type="submit" class="button">Отправить заявку</button>
-      <p class="page-form__request-text">* - Обязательные поля</p>
+      <div class="page-form__button-wrapper">
+        <button type="submit" class="button">Отправить заявку</button>
+        <p class="page-form__request-text">* - Обязательные поля</p>
+      </div>
     </form>
   </main>
 

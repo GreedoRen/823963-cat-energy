@@ -8,6 +8,15 @@
   padding-right: 15px;
 }
 
+@media (min-width: $tablet) {
+  .profile {
+    width: 768px;
+    padding: 0 30px;
+
+    flex-direction: column;
+  }
+}
+
 @media (min-width: $desktop) {
   .profile {
     width: 50%;

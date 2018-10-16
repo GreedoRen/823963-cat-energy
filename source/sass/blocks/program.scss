@@ -3,8 +3,18 @@
   list-style: none;
 }
 
+@media (min-width: $tablet) {
+  .program {
+    width: 768px;
+    padding: 0 30px;
+  }
+}
+
 @media (min-width: $desktop) {
   .program {
+    width: 1220px;
+    padding: 0 60px;
+
     width: 50%;
 
     // flex-direction: column;

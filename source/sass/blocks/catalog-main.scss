@@ -3,11 +3,11 @@
 }
 
 @media (min-width: $desktop) {
-.catalog-main__wrapper {
-  width: 1220px;
-  padding: 0 60px;
+  .catalog-main__wrapper {
+    width: 1220px;
+    padding: 0 60px;
 
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
   }
 }

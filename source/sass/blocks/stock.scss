@@ -5,6 +5,14 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  min-height: 289px;
+}
+
+.stock__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .stock__text {
@@ -12,4 +20,26 @@
   line-height: 20px;
   font-family: "Arial", "Helvetica", sans-serif;
   color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .stock {
+    background-color: #67ab3e;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    min-height: 200px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .stock {
+    background-color: #67ab3e;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    min-height: 289px;
+  }
 }

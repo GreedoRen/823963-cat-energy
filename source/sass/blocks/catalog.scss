@@ -23,3 +23,27 @@
   color: #444444;
   text-decoration: none;
 }
+
+@media (min-width: $tablet) {
+  .catalog__list {
+    width: 768px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__list {
+    width: 1220px;
+    padding: 0 60px;
+  }
+
+  .catalog__item {
+    width: 24%;
+  }
+}

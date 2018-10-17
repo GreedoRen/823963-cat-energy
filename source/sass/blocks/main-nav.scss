@@ -4,9 +4,64 @@
   font-weight: 700;
 
   color: #111111;
+
+  // padding: 0 20px;
 }
 
 .main-nav__menu {
   list-style: none;
   margin-bottom: 16px;
+
+  width: 320px;
+  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.main-nav__toggle {
+  margin-left: 20px;
+  visibility: hidden;
+}
+
+.main-nav__item {
+  padding: 12px 0;
+}
+
+
+@media (min-width: $tablet) {
+  .main-nav {
+    font-size: 18px;
+    line-height: 24.86px;
+    font-weight: 500;
+
+    color: #222222;
+
+    padding: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__menu {
+    width: 75%;
+
+    display: flex;
+    align-content: flex-end;
+    white-space: nowrap;
+  }
+
+  .main-nav__item {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__menu {
+    width: 75%;
+  }
+
+  .main-nav__item {
+    padding: 0 20px;
+  }
 }

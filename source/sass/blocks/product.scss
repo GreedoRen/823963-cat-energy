@@ -14,3 +14,35 @@
   font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
 }
+
+.product__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__image {
+  width: 45%;
+}
+
+.product__table {
+  margin-left: auto;
+}
+
+@media (min-width: $tablet) {
+  .product__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__column {
+    margin-left: auto;
+  }
+
+  .product__table {
+    margin: 0;
+  }
+
+  .product__item--extra {
+    flex-direction: row;
+  }
+}

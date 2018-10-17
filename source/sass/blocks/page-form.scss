@@ -19,3 +19,30 @@
 .page-form__request-text {
   line-height: 16px;
 }
+
+@media (min-width: $tablet) {
+  .page-form__fieldset {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .page-form__wrapper {
+    display: flex;
+  }
+
+  .page-form__button-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-form__fieldset {
+    width: 1220px;
+    padding: 0 60px;
+  }
+
+  .page-form__wrapper {
+    width: 1220px;
+    padding: 0 60px;
+  }
+}

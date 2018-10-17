@@ -1,9 +1,17 @@
 .main-footer {
   background-color: #f2f2f2;
+  padding: 0 30px;
+}
+
+.main-footer__svg {
+  margin-left: 35%;
 }
 
 .main-footer__copyright-link {
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .main-footer__text-copyright {
@@ -11,4 +19,14 @@
   line-height: 16px;
   font-family: "Arial", "Helvetica", sans-serif;
   color: #444444;
+}
+
+.main-footer__social {
+  display: flex;
+}
+
+@media (min-width: $tablet) {
+  .main-footer__bottom {
+    display: flex;
+  }
 }

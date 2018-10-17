@@ -1,5 +1,6 @@
 .before-after {
   background-color: #f2f2f2;
+  width: 320px;
 }
 
 .before-after__text {
@@ -8,6 +9,14 @@
 
 .before-after__weight-time {
   list-style: none;
+  display: flex;
+}
+
+.before-after__spent {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
 }
 
 .before-after__uppertext {
@@ -27,6 +36,8 @@
   font-size: 14px;
   line-height: 20px;
   color: #111111;
+
+  text-align: center;
 }
 
 .before-after__label {
@@ -37,4 +48,68 @@
 
 .before-after__radio-btn {
   border: none;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .before-after {
+    background-color: #ffffff;
+    width: 768px;
+  }
+
+  .before-after__wrapper-out {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .before-after__text {
+    width: 100%;
+  }
+
+  .before-after__weight-time {
+    width: 50%;
+  }
+
+  .before-after__spent {
+    padding-left: 20px;
+  }
+
+  .before-after__image-wrapper {
+    width: 708px;
+    height: 536px;
+  }
+
+  .before-after__image-before {
+    background-image: url("../img/before-tablet@1x.png");
+    width: 690px;
+    height: 517px;
+    background-color: black;
+  }
+
+  .before-after__image-after {
+    background-image: url("../img/after-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 690px;
+    height: 519px;
+    background-color: black;
+  }
+}
+
+@media (min-width: $desktop) {
+  .before-after {
+    width: 1220px;
+    padding: 0 60px;
+  }
+
+  .before-after__wrapper-out {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .before-after__cost {
+    text-align: left;
+  }
 }

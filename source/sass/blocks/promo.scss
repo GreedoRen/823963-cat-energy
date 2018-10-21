@@ -1,5 +1,4 @@
 .promo {
-  background-color: #64a83b;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -11,9 +10,10 @@
   flex-direction: column;
   align-content: center;
 
-  text-align: center;
+  max-width: 100%;
+  min-height: 481px;
 
-  width: 320px;
+  text-align: center;
 }
 
 .promo__head {
@@ -25,13 +25,17 @@
 .promo__headline {
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
+  padding-left: 10px;
 }
 
 .promo__caption {
   font-size: 14px;
   line-height: 14px;
 }
+
+// .promo__image {
+//   background-color: #64a83b;
+// }
 
 @media (min-width: $tablet) {
   .promo {
@@ -49,7 +53,7 @@
     align-content: center;
     text-align: left;
 
-    width: 768px;
+    // width: 768px;
     min-height: 842px;
   }
 
@@ -80,8 +84,8 @@
 
 @media (min-width: $desktop) {
   .promo {
-    width: 1220px;
-    padding: 0 60px;
+    // width: 1300px;
+    // padding: 0 60px;
 
     display: flex;
     flex-direction: row;

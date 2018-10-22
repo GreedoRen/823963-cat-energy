@@ -2,20 +2,14 @@
   margin: 0 auto;
 }
 
+.advantages__title {
+  margin-top: 9px;
+  margin-bottom: 14px;
+}
+
 @media (min-width: $tablet) {
-  .advantages-list {
-    width: 768px;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .advantages-list__item {
-    display: flex;
-    flex-wrap: wrap;
-
-    width: 25%;
-    min-height: 140px;
-    padding-right: 120px;
+  .advantages__title {
+    margin-top: 45px;
   }
 }
 

@@ -2,12 +2,6 @@
   margin: 0 auto;
 }
 
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-}
-
 @media (min-width: $tablet) {
   .advantages-list {
     width: 768px;

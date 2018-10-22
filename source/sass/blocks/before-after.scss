@@ -1,6 +1,6 @@
 .before-after {
   background-color: #f2f2f2;
-  width: 320px;
+  max-width: 280px;
 }
 
 .before-after__text {
@@ -10,6 +10,7 @@
 .before-after__weight-time {
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 
 .before-after__spent {
@@ -24,6 +25,8 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #111111;
+
+  border: 1px solid #f2f2f2;
 }
 
 .before-after__undertext {

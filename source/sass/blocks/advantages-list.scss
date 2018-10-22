@@ -1,6 +1,17 @@
+.advantages-list {
+  padding: 0;
+  margin-right: 10px;
+  max-width: 280px;
+
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages-list__item {
   list-style: none;
   display: flex;
+  flex-wrap: nowrap;
+
 }
 
 .advantages-list__text {
@@ -9,6 +20,8 @@
 }
 
 .advantages-list__image {
+  margin-right: 10px;
+
   background-color: #68b738;
   width: 60px;
   height: 60px;

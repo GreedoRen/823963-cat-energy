@@ -84,13 +84,24 @@
     width: 768px;
   }
 
+  .before-after__title {
+    padding-top: 56px;
+    margin-bottom: 51px;
+    white-space: nowrap;
+  }
+
   .before-after__wrapper-out {
     display: flex;
     flex-wrap: wrap;
+
+    width: 708px;
   }
 
   .before-after__text {
-    width: 100%;
+    width: 708px;
+
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .before-after__weight-time {
@@ -99,6 +110,30 @@
 
   .before-after__spent {
     padding-left: 20px;
+    padding-top: 10px;
+  }
+
+  .before-after__cost{
+    margin-left: auto;
+    padding-top: 25px;
+
+    width: 180px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .before-after__uppertext {
+    font-size: 30px;
+    line-height: 37.02px;
+    text-transform: uppercase;
+  }
+
+  .before-after__undertext {
+    width: 174px;
+
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .before-after__image-wrapper {
@@ -111,6 +146,8 @@
     width: 690px;
     height: 517px;
     background-color: black;
+
+    display: none;
   }
 
   .before-after__image-after {

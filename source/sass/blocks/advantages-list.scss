@@ -47,8 +47,17 @@
   }
 
   .advantages-list__image {
+    margin-top: 4px;
+
     min-width: 80px;
     height: 80px;
+  }
+
+  .advantages-list__text {
+    margin-top: -76px;
+    margin-right: 137px;
+
+    // width: 250px;
   }
 }
 

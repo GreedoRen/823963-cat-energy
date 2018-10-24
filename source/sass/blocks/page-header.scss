@@ -39,9 +39,9 @@
   }
 }
 
-// @media (min-width: $desktop) {
-//   .page-header {
-//     width: 1220px;
-//     padding: 0 60px;
-//   }
-// }
+@media (min-width: $desktop) {
+  .page-header {
+    width: 1300px;
+    padding: 0 40px;
+  }
+}

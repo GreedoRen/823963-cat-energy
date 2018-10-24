@@ -43,6 +43,11 @@
     flex-wrap: wrap;
   }
 
+  .contacts__list {
+    width: 708px;
+    margin-top: 91px;
+  }
+
   .contacts__map--mobile,
   .contacts__map--desktop {
     display: none;
@@ -50,6 +55,7 @@
 
   .contacts__map--tablet {
     display: block;
+    width: 767px;
   }
 
   .contacts__cooperation {
@@ -58,6 +64,7 @@
     color: #111111;
 
     width: 25%;
+    padding-left: 50px;
   }
 
   .contacts__address {

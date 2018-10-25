@@ -60,7 +60,7 @@
     text-align: left;
 
     // width: 768px;
-    min-height: 842px;
+    // min-height: 842px;
   }
 
   .promo__head {
@@ -98,12 +98,24 @@
 
 @media (min-width: $desktop) {
   .promo {
-    // width: 1300px;
-    // padding: 0 60px;
+    width: 1300px;
+    padding: 0 40px;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .promo__head {
+    width: 500px;
+    padding-left: 150px;
+    margin-top: -12px;
+  }
+
+  .promo__headline {
+    margin: 0;
+    margin-bottom: 41px;
+    width: 500px;
   }
 
   .promo__image--mobile,

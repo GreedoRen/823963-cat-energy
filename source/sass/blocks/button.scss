@@ -20,12 +20,18 @@
 
 @media (min-width: $tablet) {
   .button--program {
-    width: 240px;
+    min-width: 240px;
     margin-left: 89px;
 
     font-size: 20px;
     line-height: 20px;
 
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .button--program {
+    margin-left: 150px;
   }
 }

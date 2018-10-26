@@ -162,17 +162,44 @@
 
 @media (min-width: $desktop) {
   .before-after {
-    width: 1220px;
-    padding: 0 60px;
+    max-width: 1300px;
+    padding: 0 40px;
+    display: flex;
+  }
+
+  .before-after__title {
+    margin-top: 0;
+    padding-top: 2px;
+    padding-left: 70px;
   }
 
   .before-after__wrapper-out {
     display: flex;
     flex-direction: column;
     width: 50%;
+    padding-top: 79px;
+    padding-left: 71px;
+  }
+
+  .before-after__text {
+    width: 470px;
+  }
+
+  .before-after__weight-time {
+    padding-left: 102px;
+    padding-top: 44px;
   }
 
   .before-after__cost {
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 17px;
+
     text-align: left;
+    white-space: nowrap;
+  }
+
+  .before-after__image-wrapper {
+    margin-left: auto;
   }
 }

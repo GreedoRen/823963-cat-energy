@@ -34,7 +34,7 @@
   </header>
 
   <main class="page-form container">
-    <h1 class="head form__title">Подбор программы</h1>
+    <h1 class="head page-form__title">Подбор программы</h1>
     <p class="page-form__questionary-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form method="post" action="https://echo.htmlacademy.ru" class="page-form__main container">
       <div class="page-form__wrapper">
@@ -78,12 +78,12 @@
         <legend class="page-form__headline page-form__headline--contacts">Контактные данные (владельца кота)</legend>
         <div class="profile profile--contact">
 
-          <div class="profile__wrapper-label">
+          <div class="profile__wrapper-label profile__wrapper-label--mail">
             <label for="mail-input" class="profile__label profile__label--mail">E-mail:*</label>
             <input type="email" class="profile__input profile__input-mail" id="mail-input" name="mail-input" placeholder="kuklachev@gmail.com">
           </div>
 
-          <div class="profile__wrapper-label">
+          <div class="profile__wrapper-label profile__wrapper-label--phone">
             <label for="phone" class="profile__label profile__label--phone">Телефон:*</label>
             <input type="text" class="profile__input profile__input-phone" id="phone" name="phone" placeholder="8 (960) 900-60-90">
           </div>
@@ -92,34 +92,34 @@
       </fieldset>
 
       <fieldset class="page-form__fieldset">
-        <legend class="page-form__headline page-form__headline--cooment">Комментарий</legend>
+        <legend class="page-form__headline page-form__headline--comment">Комментарий</legend>
         <textarea class="page-form__textarea">Расскажите обо всех повадках кота</textarea>
       </fieldset>
 
       <fieldset class="page-form__fieldset">
         <legend class="page-form__headline page-form__headline--additionary">Дополнительно</legend>
         <ul class="page-form__fieldset-add additionally">
-          <li class="additionally__item">
-            <input type="checkbox" class="additionally__input" id="sweetener" name="sweetener">
+          <li class="additionally__item additionally__item--sweetener">
+            <input type="checkbox" class="additionally__input additionally__input--sweetener" id="sweetener" name="sweetener">
             <label for="sweetener" class="additionally__label">Сахарозаменитель</label>
           </li>
-          <li class="additionally__item">
-            <input type="checkbox" class="additionally__input" id="water" name="water">
+          <li class="additionally__item additionally__item--water">
+            <input type="checkbox" class="additionally__input additionally__input--water" id="water" name="water">
             <label for="water" class="additionally__label">Питьевая вода</label>
           </li>
-          <li class="additionally__item">
-            <input type="checkbox" class="additionally__input" id="milk" name="milk">
+          <li class="additionally__item additionally__item--milk">
+            <input type="checkbox" class="additionally__input additionally__input--milk" id="milk" name="milk">
             <label for="milk" class="additionally__label">Молоко</label>
           </li>
-          <li class="additionally__item">
-            <input type="checkbox" class="additionally__input" id="vitamins" name="vitamins">
+          <li class="additionally__item additionally__item--vitamins">
+            <input type="checkbox" class="additionally__input additionally__input--vitamins" id="vitamins" name="vitamins">
             <label for="vitamins" class="additionally__label">Витамины</label>
           </li>
         </ul>
       </fieldset>
 
       <div class="page-form__button-wrapper">
-        <button type="submit" class="button">Отправить заявку</button>
+        <button type="submit" class="button button__form">Отправить заявку</button>
         <p class="page-form__request-text">* - Обязательные поля</p>
       </div>
     </form>

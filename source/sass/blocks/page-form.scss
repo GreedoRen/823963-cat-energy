@@ -33,7 +33,7 @@
   width: 184px;
 }
 
-.page-form__headline--cooment {
+.page-form__headline--comment {
   margin-left: -36px;
   padding-bottom: 31px;
 }
@@ -81,28 +81,120 @@
 }
 
 @media (min-width: $tablet) {
+  .page-form__title {
+    padding-top: 9px;
+  }
+
   .page-form__fieldset {
     width: 768px;
     padding: 0 30px;
   }
 
+  .page-form__questionary-text {
+    width: 380px;
+    padding-top: 16px;
+    padding-left: 40px;
+    padding-bottom: 9px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   .page-form__wrapper {
     display: flex;
+    flex-direction: column;
   }
 
   .page-form__button-wrapper {
     display: flex;
+    width: 708px;
+    margin-top: 26px;
+    padding-left: 46px;
+  }
+
+  .page-form__request-text {
+    padding-left: 75px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .page-form__headline--contacts {
+    width: 530px;
+    padding-top: 97px;
+    padding-left: 13px;
+    padding-bottom: 61px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .page-form__headline--additionary {
+    margin-left: -25px;
+    padding-top: 62px;
+    padding-bottom: 31px;
+  }
+
+  .page-form__headline {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .page-form__headline--comment {
+    padding-top: 58px;
+    padding-left: 13px;
+    padding-bottom: 75px;
+  }
+
+  .page-form__textarea {
+    width: 610px;
+    min-height: 158px;
+    margin-left: -21px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-form__fieldset {
-    width: 1220px;
+    width: 1300px;
     padding: 0 60px;
   }
 
   .page-form__wrapper {
-    width: 1220px;
+    width: 1300px;
     padding: 0 60px;
+    flex-direction: row;
+  }
+
+  .page-form__title {
+    padding-left: 70px;
+    padding-top: 22px;
+  }
+
+  .page-form__questionary-text {
+    padding-left: 70px;
+  }
+
+  .page-form__headline--contacts {
+    padding-top: 41px;
+    margin-left: -46px;
+  }
+
+  .page-form__headline--additionary {
+    margin-left: -35px;
+    padding-top: 65px;
+    padding-bottom: 51px;
+  }
+
+  .page-form__button-wrapper {
+    margin-top: 0;
+    padding-left: 65px;
+  }
+
+  .page-form__request-text {
+    padding-left: 93px;
+
+    white-space: nowrap;
   }
 }

@@ -23,23 +23,65 @@
 @media (min-width: $tablet) {
   .additionally {
     width: 768px;
+    margin-left: -12px;
 
     display: flex;
     flex-wrap: wrap;
   }
 
+  .additionally__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .additionally__item {
     width: 50%;
+  }
+
+  .additionally__input--sweetener {
+    margin-bottom: 29px;
+    padding-left: 10px;
+  }
+
+  .additionally__input--water {
+    padding-left: 20px;
+    margin-left: -35px;
+  }
+
+  .additionally__input--vitamins {
+    margin-left: -35px;
   }
 }
 
 @media (min-width: $desktop) {
   .additionally {
-    width: 1220px;
-    padding: 0 60px;
+    width: 1300px;
+    padding: 0;
+    margin-left: -22px;
+    padding-bottom: 6px;
   }
 
-  .additionally__item {
-    width: 25%;
+  // .additionally__item {
+  //   width: 25%;
+  // }
+
+  .additionally__item--sweetener {
+    width: 22%;
+    padding-right: 78px;
   }
+
+  .additionally__item--water {
+    width: 22%;
+    padding-left: 0;
+  }
+
+  .additionally__item--milk {
+    width: 22%;
+    padding-right: 78px;
+  }
+
+  .additionally__item--vitamins {
+    width: 22%;
+  }
+
 }

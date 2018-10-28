@@ -1,5 +1,23 @@
+.additionally {
+  padding: 0;
+  padding-top: 22px;
+  margin-left: -36px;
+}
+
 .additionally__item {
   list-style: none;
+  padding-bottom: 23px;
+}
+
+.additionally__label {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.additionally__input {
+  margin-right: 28px;
 }
 
 @media (min-width: $tablet) {

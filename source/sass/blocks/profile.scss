@@ -1,11 +1,46 @@
 .profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-right: 15px;
+  padding-top: 3px;
+  margin-left: -35px;
+
   font-size: 16px;
   line-height: 18px;
   color: #222222;
+  text-transform: uppercase;
+}
 
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 15px;
+.profile__wrapper-label {
+  padding-bottom: 15px;
+}
+
+.profile__input {
+  padding: 13px;
+
+  &::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.profile__input--name {
+  width: 60%;
+}
+
+.profile__input--weight {
+  width: 60%;
+}
+
+.profile__input--old {
+  max-width: 47%;
+}
+
+.profile__label {
+  padding-right: 11px;
 }
 
 @media (min-width: $tablet) {

@@ -1,8 +1,32 @@
+.program {
+  margin-left: -70px;
+  min-width: 280px;
+}
+
 .program__item {
   display: flex;
   list-style: none;
 }
 
+.program__item--less {
+  padding-top: 6px;
+  padding-bottom: 25px;
+}
+
+.program__item--mass {
+  padding-bottom: 24px;
+}
+
+.program__input {
+  margin-right: 24px;
+}
+
+.program__label {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
 @media (min-width: $tablet) {
   .program {
     width: 768px;

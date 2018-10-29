@@ -18,6 +18,14 @@
   line-height: 18px;
 }
 
+.button--catalog {
+  min-width: 280px;
+}
+
+// .button--extra {
+//   padding-top: 10px;
+// }
+
 @media (min-width: $tablet) {
   .button--program {
     min-width: 240px;

@@ -1,5 +1,18 @@
 .extra-product__headline {
+  padding-top: 5px;
+
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+}
+
+@media (min-width: $tablet) {
+  .extra-product__headline {
+    padding-left: 37px;
+    padding-top: 8px;
+    margin-top: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

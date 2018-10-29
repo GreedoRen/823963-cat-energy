@@ -1,21 +1,29 @@
 .stock {
-  margin: 0 auto;
+  max-width: 280px;
+  min-height: 289px;
+
+  // margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 9px;
 
   background-color: #67ab3e;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  min-height: 289px;
 }
 
 .stock__link {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .stock__text {
+  width: 170px;
+  margin-top: 67%;
+  margin-left: 19%;
+
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial", "Helvetica", sans-serif;

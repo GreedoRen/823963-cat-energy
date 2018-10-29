@@ -97,11 +97,47 @@
 
 @media (min-width: $desktop) {
   .catalog__list {
-    width: 1300px;
+    max-width: 1300px;
     padding: 0 40px;
+    justify-content: space-around;
   }
 
   .catalog__item {
-    width: 24%;
+    width: 245px;
   }
+
+  .catalog__title {
+    padding-left: 70px;
+    padding-top: 12px;
+
+  }
+
+  // .catalog__item--1 {
+  //   padding-right: 41px;
+
+  // }
+
+  // .catalog__item--2 {
+  //   padding-right: 107px;
+  // }
+
+  // .catalog__item--3 {
+
+  // }
+
+  // .catalog__item--4 {
+
+  // }
+
+  // .catalog__item--5 {
+
+  // }
+
+  // .catalog__item--6 {
+
+  // }
+
+  // .catalog__item--7 {
+
+  // }
 }

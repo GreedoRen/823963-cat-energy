@@ -211,3 +211,49 @@
     margin-left: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__table {
+    min-width: 245px;
+  }
+
+
+  .product__wrapper {
+    min-width: 245px;
+  }
+
+  .product__name {
+    width: 245px;
+  }
+
+  .product--extra {
+    flex-direction: row;
+  }
+
+  .product__item--extra {
+    padding-top: 0;
+    min-width: 666px;
+  }
+
+  .product__name--extra {
+    padding-left: 16px;
+    padding-top: 7px;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  .product__wrapper-extra {
+    width: 285px;
+    margin-left: 0;
+    padding-left: 49px;
+  }
+
+  .product__price-value--extra {
+    margin-left: auto;
+  }
+}

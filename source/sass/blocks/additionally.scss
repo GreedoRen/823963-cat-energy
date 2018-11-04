@@ -1,7 +1,7 @@
 .additionally {
   padding: 0;
   padding-top: 22px;
-  margin-left: -36px;
+  margin-left: -35px;
 }
 
 .additionally__item {
@@ -59,6 +59,7 @@
     padding: 0;
     margin-left: -22px;
     padding-bottom: 6px;
+    justify-content: space-between;
   }
 
   // .additionally__item {
@@ -66,12 +67,12 @@
   // }
 
   .additionally__item--sweetener {
-    width: 22%;
+    width: 25%;
     padding-right: 78px;
   }
 
   .additionally__item--water {
-    width: 22%;
+    width: 17%;
     padding-left: 0;
   }
 
@@ -82,5 +83,19 @@
 
   .additionally__item--vitamins {
     width: 22%;
+  }
+
+  .additionally__input--sweetener {
+    margin-right: 30px;
+    margin-left: 22px;
+  }
+
+  .additionally__input--milk {
+    margin-right: 31px;
+  }
+
+  .additionally__input--vitamins {
+    margin-right: 27px;
+    margin-left: -14px;
   }
 }

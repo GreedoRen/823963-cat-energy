@@ -3,7 +3,7 @@
 }
 
 .advantages__title {
-  margin-top: 9px;
+  margin-top: 15px;
   margin-bottom: 14px;
 }
 
@@ -15,19 +15,12 @@
 
 @media (min-width: $desktop) {
   .advantages {
-    width: 1220px;
-    padding: 0 60px;
-  }
-
-  .advantages-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    width: 1300px;
+    padding: 0 40px;
   }
 
   .advantages__title {
-    padding-left: 60px;
-    padding-top: 21px;
-    margin-bottom: 55px;
+    padding-top: 28px;
+    margin-bottom: 47px;
   }
 }

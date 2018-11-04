@@ -1,31 +1,53 @@
 .promo {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  position: relative;
+  padding-top: 27px;
 
   color: #ffffff;
   font-family: "Oswald", serif;
   font-weight: normal;
 
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-
-  max-width: 280px;
-  min-height: 481px;
-
   text-align: center;
+
+  // background-image: url("../img/index-background-mobile@1x.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 0 0;
+  // background-size: cover;
+  // background-color: #63a73a;
+
+  // width: 100%;
+  // // height: 305px;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 305px;
+    position: absolute;
+
+
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    background-color: #63a73a;
+
+    top: 0;
+    left: 0;
+    z-index: -3;
+    }
 }
 
-.promo__head {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+// .promo__head {
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
 
-  margin-top: -5px;
-}
+//   margin-top: -5px;
+// }
 
 .promo__headline {
+  margin: 0;
+  padding-bottom: 10px;
   font-size: 36px;
   line-height: 36px;
 }
@@ -35,8 +57,8 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  margin-top: -6px;
-  padding-left: 8px;
+  // margin-top: -6px;
+  // padding-left: 8px;
 }
 
 .promo__image {
@@ -45,11 +67,7 @@
 
 @media (min-width: $tablet) {
   .promo {
-    position: relative;
-
-    background-color: #ffffff;
     background-image: none;
-
 
     color: #111111;
     font-weight: normal;
@@ -60,50 +78,71 @@
     text-align: left;
 
     // width: 768px;
-    // min-height: 842px;
+    min-height: 842px;
+
+    &:after {
+      display: none;
+    }
   }
 
-  .promo__head {
-    width: 427px;
-    padding-left: 87px;
-    padding-top: 4px;
-
-    z-index: 2;
+  .promo__container {
+    padding: 0 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  .promo__image {
-    display: none;
-  }
+  // .promo__head {
+  //   width: 427px;
+  //   padding-left: 87px;
+  //   padding-top: 4px;
 
-  // .promo__image--tablet {
-  //   position: absolute;
+  //   z-index: 2;
   // }
 
   .promo__headline {
-    margin-bottom: 41px;
+    max-width: 100%;
+    margin-bottom: 11px;
+    padding-top: 25px;
+    padding-left: 27px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   .promo__caption {
-    margin: 0;
-    padding-left: 1px;
-    padding-bottom: 54px;
+    margin-bottom: 48px;
+    padding-left: 28px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .promo__picture {
+    order: 4;
+    margin-top: -40px;
+    z-index: -1;
   }
 }
 
 @media (min-width: $desktop) {
   .promo {
-    width: 1300px;
-    padding: 0 40px;
+    // width: 1300px;
+    // padding: 0 40px;
+    min-height: 0;
+    position: static;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &:after {
+      display: block;
+      width: 50%;
+      height: 696px;
+      right: 0;
+      left: auto;
+    }
   }
 
   .promo__head {
@@ -113,22 +152,29 @@
   }
 
   .promo__headline {
+    width: 526px;
     margin: 0;
     margin-bottom: 41px;
-    width: 500px;
+    padding-left: 100px;
+    padding-top: 78px;
   }
 
-  .promo__image--mobile,
-  .promo__image--tablet {
-    display: none;
+  .promo__caption {
+    padding-left: 100px;
+    margin-top: -10px;
   }
 
-  .promo__image--desktop {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
+  .promo__picture {
+    margin-left: 42%;
+    margin-top: -33.5%;
 
-    padding-right: 30px;
   }
+  // .promo__image--desktop {
+  //   background-image: url("../img/index-background-desktop@1x.jpg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0 0;
+  //   background-size: cover;
+
+  //   padding-right: 30px;
+  // }
 }

@@ -1,10 +1,15 @@
 .page-form {
-  min-width: 280px;
+  min-width: 320px;
   background-color: #ffffff;
 }
 
+.page-form__title {
+  margin-top: 0;
+  padding-top: 16px;
+}
+
 .page-form__fieldset {
-  max-width: 280px;
+  max-width: 320px;
   border: none;
 }
 
@@ -27,27 +32,28 @@
 }
 
 .page-form__headline--contacts {
-  padding-top: 32px;
+  padding-top: 34px;
   margin-left: -36px;
   padding-bottom: 28px;
-  width: 184px;
+  width: 186px;
 }
 
 .page-form__headline--comment {
   margin-left: -36px;
   padding-bottom: 31px;
+  padding-top: 3px;
 }
 
 .page-form__headline--additionary {
   margin-left: -36px;
-  padding-top: 17px;
+  padding-top: 15px;
 }
 
 .page-form__textarea {
-  min-width: 261px;
-  min-height: 133px;
+  min-width: 283px;
+  min-height: 150px;
   margin-left: -36px;
-  padding-top: 13px;
+  padding-top: 11px;
   padding-left: 17px;
 
   text-transform: uppercase;
@@ -61,8 +67,8 @@
 }
 
 .page-form__request-text {
-  padding-left: 86px;
-  padding-top: 2px;
+  padding-left: 78px;
+  padding-top: 8px;
 
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
@@ -72,7 +78,9 @@
 .page-form__button-wrapper {
   width: 280px;
   margin-left: -36px;
-  margin-top: -10px;
+  margin-top: -5px;
+
+  border: none;
 
   // text-transform: uppercase;
   // font-family: "Oswald", sans-serif;
@@ -82,7 +90,7 @@
 
 @media (min-width: $tablet) {
   .page-form__title {
-    padding-top: 9px;
+    padding-top: 53px;
   }
 
   .page-form__fieldset {
@@ -91,8 +99,8 @@
   }
 
   .page-form__questionary-text {
-    width: 380px;
-    padding-top: 16px;
+    width: 420px;
+    padding-top: 15px;
     padding-left: 40px;
     padding-bottom: 9px;
 
@@ -107,13 +115,16 @@
 
   .page-form__button-wrapper {
     display: flex;
-    width: 708px;
+    width: 300px;
     margin-top: 26px;
-    padding-left: 46px;
+    padding-left: 30px;
   }
 
   .page-form__request-text {
-    padding-left: 75px;
+    padding-top: 0;
+    padding-left: 65px;
+    min-width: 300px;
+
     font-size: 16px;
     line-height: 16px;
   }
@@ -140,14 +151,14 @@
   }
 
   .page-form__headline--comment {
-    padding-top: 58px;
+    padding-top: 40px;
     padding-left: 13px;
     padding-bottom: 75px;
   }
 
   .page-form__textarea {
-    width: 610px;
-    min-height: 158px;
+    width: 630px;
+    min-height: 174px;
     margin-left: -21px;
 
     font-size: 20px;
@@ -158,42 +169,55 @@
 @media (min-width: $desktop) {
   .page-form__fieldset {
     width: 1300px;
-    padding: 0 60px;
+    padding: 0 40px;
   }
 
   .page-form__wrapper {
     width: 1300px;
-    padding: 0 60px;
+    padding: 0 40px;
     flex-direction: row;
   }
 
   .page-form__title {
     padding-left: 70px;
-    padding-top: 22px;
+    padding-top: 71px;
+  }
+
+  .page-form__headline--comment {
+    padding-top: 40px;
+    margin-left: -27px;
+  }
+
+  .page-form__textarea {
+    width: 1219px;
+    margin-left: -12px;
+
+    border: 1px solid grey;
   }
 
   .page-form__questionary-text {
     padding-left: 70px;
+    width: 450px;
   }
 
   .page-form__headline--contacts {
     padding-top: 41px;
-    margin-left: -46px;
+    margin-left: -27px;
   }
 
   .page-form__headline--additionary {
-    margin-left: -35px;
+    margin-left: -16px;
     padding-top: 65px;
     padding-bottom: 51px;
   }
 
   .page-form__button-wrapper {
-    margin-top: 0;
-    padding-left: 65px;
+    margin-top: 3px;
+    padding-left: 50px;
   }
 
   .page-form__request-text {
-    padding-left: 93px;
+    padding-left: 81px;
 
     white-space: nowrap;
   }

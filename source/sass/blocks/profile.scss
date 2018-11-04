@@ -4,7 +4,7 @@
   align-content: center;
   padding-right: 15px;
   padding-top: 3px;
-  margin-left: -35px;
+  margin-left: -34px;
 
   font-size: 16px;
   line-height: 18px;
@@ -13,7 +13,7 @@
 }
 
 .profile__wrapper-label {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .profile__input {
@@ -28,15 +28,23 @@
 }
 
 .profile__input--name {
-  width: 60%;
+  width: 221px;
 }
 
 .profile__input--weight {
-  width: 60%;
+  width: 199px;
 }
 
 .profile__input--old {
-  max-width: 47%;
+  width: 159px;
+}
+
+.profile__input-mail {
+  width: 209px;
+}
+
+.profile__input-phone {
+  width: 192px;
 }
 
 .profile__label {
@@ -54,7 +62,7 @@
 
   .profile__wrapper-label {
     margin-left: -16px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;
   }
 
   .profile__label {
@@ -62,6 +70,10 @@
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .profile__label--phone {
+    margin-left: -3px;
   }
 
   .profile__wrapper-label--mail {
@@ -78,22 +90,31 @@
   }
 
   .profile__input--name {
-    width: 68%;
+    width: 567px;
   }
 
   .profile__input--weight {
-    width: 65%;
+    width: 540px;
   }
 
   .profile__input--old {
-    width: 47%;
+    max-width: 491px;
+  }
+
+  .profile__input-mail {
+    width: 554px;
+  }
+
+  .profile__input-phone {
+    width: 533px;
   }
 }
 
 @media (min-width: $desktop) {
   .profile {
     padding-top: 21px;
-    width: 517px;
+    padding-left: 67px;
+    width: 570px;
     flex-direction: column;
   }
 
@@ -101,7 +122,7 @@
     flex-direction: row;
 
     width: 1300px;
-    padding-left: 89px;
+    padding-left: 108px;
   }
 
   .profile__wrapper-label {
@@ -110,24 +131,23 @@
   }
 
   .profile__input--name {
-    width: 56%;
+    width: 496px;
   }
 
   .profile__input--weight {
-    width: 53%;
+    width: 468px;
   }
 
   .profile__input--old {
-    width: 56%;
+    width: 418px;
   }
 
   .profile__input-mail {
-    width: 56%;
-    padding-right: 30px;
+    width: 490px;
   }
 
   .profile__input-phone {
-    width: 68%;
+    width: 473px;
   }
 
   .profile__wrapper-label--mail {
@@ -135,19 +155,7 @@
   }
 
   .profile__wrapper-label--phone {
-    width: 50%;
-    padding-left: 83px;
-  }
-
-  .page-form__headline--comment {
-    padding-top: 40px;
-    margin-left: -45px;
-  }
-
-  .page-form__textarea {
-    width: 1200px;
-    margin-left: -31px;
-
-    border: 1px solid grey;
+    width: 63%;
+    padding-left: 153px;
   }
 }

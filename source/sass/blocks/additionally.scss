@@ -7,9 +7,12 @@
 .additionally__item {
   list-style: none;
   padding-bottom: 23px;
+  position: relative;
 }
 
 .additionally__label {
+  padding-left: 48px;
+
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -20,10 +23,53 @@
   margin-right: 28px;
 }
 
+// .additionally__input + label::before {
+//   content: "";
+//   position: absolute;
+//   width: 10px;
+//   height: 10px;
+
+//   background-image: url("../../img/icon-plus.svg");
+//   background-repeat: no-repeat;
+//   background-position: 0 0;
+
+//   top: 0;
+//   left: 0;
+// }
+
+.additionally__item:active {
+  opacity: 0.3;
+}
+
+.additionally__input + .additionally__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid grey;
+
+  top: -5px;
+  left: 1px;
+}
+
+.additionally__input:checked + .additionally__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid grey;
+
+  // background-image: url();
+
+  top: -5px;
+  left: 1px;
+}
+
 @media (min-width: $tablet) {
   .additionally {
     width: 768px;
     margin-left: -12px;
+    padding-top: 19px;
 
     display: flex;
     flex-wrap: wrap;
@@ -38,27 +84,38 @@
     width: 50%;
   }
 
-  .additionally__input--sweetener {
+  .additionally__item--sweetener {
     margin-bottom: 29px;
-    padding-left: 10px;
   }
 
-  .additionally__input--water {
+  .additionally__item--water {
     padding-left: 20px;
-    margin-left: -35px;
+    margin-left: -60px;
   }
 
-  .additionally__input--vitamins {
-    margin-left: -35px;
+  .additionally__item--vitamins {
+    margin-left: -39px;
   }
+  // .additionally__input--sweetener {
+  //   margin-bottom: 29px;
+  // }
+
+  // .additionally__input--water {
+  //   padding-left: 20px;
+  //   margin-left: -35px;
+  // }
+
+  // .additionally__input--vitamins {
+  //   margin-left: -35px;
+  // }
 }
 
 @media (min-width: $desktop) {
   .additionally {
     width: 1300px;
     padding: 0;
-    margin-left: -22px;
-    padding-bottom: 6px;
+    margin-left: -1px;
+    padding-bottom: 1px;
     justify-content: space-between;
   }
 
@@ -67,22 +124,22 @@
   // }
 
   .additionally__item--sweetener {
-    width: 25%;
+    width: 24%;
     padding-right: 78px;
   }
 
   .additionally__item--water {
-    width: 17%;
+    width: 20%;
     padding-left: 0;
   }
 
   .additionally__item--milk {
-    width: 22%;
+    width: 23%;
     padding-right: 78px;
   }
 
   .additionally__item--vitamins {
-    width: 22%;
+    width: 25%;
   }
 
   .additionally__input--sweetener {
@@ -98,4 +155,30 @@
     margin-right: 27px;
     margin-left: -14px;
   }
+
+  .additionally__input + .additionally__label::before {
+    width: 40px;
+    height: 40px;
+
+    top: -9px;
+    left: -5px;
+  }
+
+  .additionally__input:checked + .additionally__label::before {
+    width: 40px;
+    height: 40px;
+
+    top: -9px;
+    left: -5px;
+  }
+
+  // .additionally__input:checked + label:after {
+  //   width: 10px;
+  //   height: 40px;
+  //   transform: rotateX(45deg);
+  //   background-color: aqua;
+
+  //   top: 9px;
+  //   left: 5px;
+  // }
 }

@@ -70,10 +70,20 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  border-bottom: 1px dashed lightgrey;
+}
+
+.before-after__label:hover {
+  border-bottom: 1px solid lightgrey;
+}
+
+.before-after__label:active {
+  border-bottom: none;
 }
 
 .before-after__radio-btn {
   border: none;
+  position: relative;
 
   text-align: center;
 }
@@ -168,6 +178,31 @@
     height: 519px;
     background-color: black;
   }
+
+  .before-after__input + .before-after__label::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    background-color: #ffffff;
+
+    top: 45px;
+    left: 337px;
+  }
+
+  .before-after__input + .before-after__label::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: greenyellow;
+
+    top: 55px;
+    left: 347px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -191,7 +226,7 @@
     padding-left: 71px;
   }
 
-  .before-after__spent{
+  .before-after__spent {
     padding-left: 30px;
   }
 
@@ -227,5 +262,15 @@
 
   .before-after__image-wrapper {
     margin-left: auto;
+  }
+
+  .before-after__input + .before-after__label::before {
+    top: 55px;
+    left: 347px;
+  }
+
+  .before-after__input + .before-after__label::after {
+    top: 65px;
+    left: 357px;
   }
 }

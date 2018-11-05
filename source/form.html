@@ -32,7 +32,7 @@
           <a class="main-nav__item-link main-nav__item-link--black" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-link main-nav__item-link--black" href="form.html">Подбор программы</a>
+          <a class="main-nav__item-link main-nav__item-link--black main-nav__item-link--active" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -64,15 +64,15 @@
         <fieldset class="page-form__fieldset">
           <ul class="program">
             <li class="program__item program__item--less">
-              <input type="radio" class="program__input" name="less" id="less" value="less">
+              <input type="radio" class="program__input visually-hidden" name="less" id="less" value="less">
               <label for="less" class="program__label">Похудение</label>
             </li>
             <li class="program__item program__item--mass">
-              <input type="radio" class="program__input" name="mass" id="mass" value="mass">
+              <input type="radio" class="program__input visually-hidden" name="mass" id="mass" value="mass">
               <label for="mass" class="program__label">Набор массы</label>
             </li>
             <li class="program__item program__item--guid">
-              <input type="radio" class="program__input" name="guid" id="guid" value="guid">
+              <input type="radio" class="program__input visually-hidden" name="guid" id="guid" value="guid">
               <label for="guid" class="program__label">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -106,19 +106,19 @@
         <legend class="page-form__headline page-form__headline--additionary">Дополнительно</legend>
         <ul class="page-form__fieldset-add additionally">
           <li class="additionally__item additionally__item--sweetener">
-            <input type="checkbox" class="additionally__input additionally__input--sweetener" id="sweetener" name="sweetener">
+            <input type="checkbox" class="additionally__input additionally__input--sweetener visually-hidden" id="sweetener" name="sweetener" checked>
             <label for="sweetener" class="additionally__label">Сахарозаменитель</label>
           </li>
           <li class="additionally__item additionally__item--water">
-            <input type="checkbox" class="additionally__input additionally__input--water" id="water" name="water">
+            <input type="checkbox" class="additionally__input additionally__input--water visually-hidden" id="water" name="water">
             <label for="water" class="additionally__label">Питьевая вода</label>
           </li>
           <li class="additionally__item additionally__item--milk">
-            <input type="checkbox" class="additionally__input additionally__input--milk" id="milk" name="milk">
+            <input type="checkbox" class="additionally__input additionally__input--milk visually-hidden" id="milk" name="milk">
             <label for="milk" class="additionally__label">Молоко</label>
           </li>
           <li class="additionally__item additionally__item--vitamins">
-            <input type="checkbox" class="additionally__input additionally__input--vitamins" id="vitamins" name="vitamins">
+            <input type="checkbox" class="additionally__input additionally__input--vitamins visually-hidden" id="vitamins" name="vitamins">
             <label for="vitamins" class="additionally__label">Витамины</label>
           </li>
         </ul>

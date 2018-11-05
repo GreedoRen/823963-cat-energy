@@ -28,6 +28,14 @@
   text-decoration: none;
 }
 
+.main-nav__item-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__item-link:active {
+  opacity: 0.3;
+}
+
 .main-nav__item {
   border-bottom: 1px solid #e6e6e6;
 }
@@ -73,6 +81,10 @@
   .main-nav__item:first-child {
     border-top: none;
   }
+
+  .main-nav__item-link--active {
+    border-bottom: 2px solid green;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -92,5 +104,9 @@
 
   .main-nav__item-link--black {
     color: #222222;
+  }
+
+  .main-nav__item-link--active-desktop {
+    border-bottom: 2px solid white;
   }
 }

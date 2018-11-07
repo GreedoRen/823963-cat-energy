@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var svgSprite = require('gulp-svg-sprite');
+var svgSprite = require('gulp-svg-sprites');
 
 
 gulp.task("css", function () {

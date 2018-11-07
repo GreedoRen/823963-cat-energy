@@ -27,13 +27,8 @@
   color: #444444;
 }
 
-// .main-footer__social {
-//   display: flex;
-// }
-
-.main-footer__social {
-  width: 320px;
-  height: 20px;
+.main-footer__social-list {
+  display: flex;
 }
 
 @media (min-width: $tablet) {

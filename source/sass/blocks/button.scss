@@ -4,10 +4,115 @@
   text-decoration: none;
 
   font-size: 16px;
-  line-height: 20px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button--program {
+  display: block;
+  height: 40px;
+
   font-size: 14px;
-  line-height: 18px;
+}
+
+.button__form {
+  width: 100%;
+  display: block;
+  height: 40px;
+  margin-left: 16px;
+
+  font-size: 16px;
+}
+
+.button--catalog {
+  min-width: 280px;
+  display: block;
+
+  text-align: center;
+}
+
+.button--extra {
+  min-width: 280px;
+  display: block;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .button--program {
+    max-width: 245px;
+    height: 52px;
+    margin-left: 28px;
+
+    font-size: 20px;
+    line-height: 52px;
+
+    text-align: center;
+  }
+
+  .button--extra {
+    margin-top: -46px;
+    margin-left: 37px;
+    width: 634px;
+  }
+
+  .button__form {
+    min-width: 280px;
+    height: 50px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .button--catalog {
+    min-width: 249px;
+    margin-left: 39px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop) {
+  .button--program {
+    margin-top: 3px;
+    margin-left: 100px;
+  }
+
+  .button__form {
+    min-width: 570px;
+  }
+
+  .button--catalog {
+    min-width: 170px;
+    margin-left: 2px;
+    margin-top: 41px;
+
+    height: 40px;
+    padding: 0;
+
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .button--extra {
+    max-width: 245px;
+    min-width: 245px;
+    max-height: 40px;
+    padding: 0;
+    margin-top: 2px;
+    margin-left: 5px;
+
+    line-height: 40px;
+    text-align: center;
+  }
 }

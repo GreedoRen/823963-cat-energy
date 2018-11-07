@@ -4,11 +4,11 @@
   color: #111111;
 }
 
-// @media (min-width: $tablet) {
-//   .head {
-//     width: 768px;
-//     padding: 0 30px;
-//   }
+@media (min-width: $tablet) {
+  .head {
+    font-size: 60px;
+  }
+}
 
 // @media (min-width: $desktop) {
 //   .head {

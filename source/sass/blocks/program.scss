@@ -1,19 +1,146 @@
+.program {
+  min-width: 320px;
+  margin-left: -69px;
+}
+
 .program__item {
   display: flex;
   list-style: none;
+  position: relative;
+}
+
+.program__item:active {
+  opacity: 0.3;
+}
+
+.program__item--less {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+.program__item--mass {
+  padding-bottom: 24px;
+}
+
+.program__input {
+  margin-right: 24px;
+}
+
+.program__label {
+  padding-left: 42px;
+
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.program__input + .program__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid grey;
+
+  top: 0;
+  right: 258px;
+}
+///////////////////////////СДЕЛАТЬ//////////////////
+.program__input:checked + .program__label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid grey;
+
+  top: 0;
+  right: 258px;
+}
+
+.program__input:checked + .program__label::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #68b738;
+
+  top: 0;
+  right: 258px;
 }
 
 @media (min-width: $tablet) {
   .program {
     width: 768px;
     padding: 0 30px;
+
+    padding-top: 59px;
+    padding-left: 85px;
+  }
+
+  .program__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .program__input {
+    margin-right: 32px;
+  }
+
+  .program__item {
+    padding-left: 9px;
+  }
+
+  .program__item--less {
+    padding-bottom: 33px;
+  }
+
+  .program__item--mass {
+    padding-bottom: 32px;
+  }
+
+  .program__input + .program__label::before {
+    top: 0;
+    left: 0;
+  }
+
+  .program__input:checked + .program__label::before {
+    top: 0;
+    left: 0;
+  }
+
+  .program__input:checked + .program__label::after {
+    top: 10px;
+    left: 10px;
   }
 }
 
 @media (min-width: $desktop) {
   .program {
-    width: 1220px;
-    padding: 0 60px;
-    // flex-direction: column;
+    width: 570px;
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 83px;
+  }
+
+  .program__input + .program__label::before {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -5px;
+  }
+
+  .program__input:checked + .program__label::before {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -5px;
+  }
+
+  .program__input:checked + .program__label::after {
+    top: 10px;
+    left: 10px;
   }
 }

@@ -189,9 +189,9 @@
         <h2 class="promo__headline">Функциональное питание для котов</h2>
         <p class="promo__caption">Занялся собой? Займись котом!</p>
         <picture class="promo__picture">
-          <source media="(min-width: 1300px)" srcset="../img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.jpg">
-          <img class="promo__image" src="../img/index-can-mobile@1x.png" alt="">
+          <source media="(min-width: 1300px)" srcset="../img/index-can-desktop@1x.png, ../img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="../img/index-can-tablet@1x.jpg, ../img/index-can-tablet@2x.jpg 2x">
+          <img class="promo__image" src="../img/index-can-mobile@1x.png" alt="Котофитнес">
         </picture>
         <a class="button button--program" href="#">Подобрать программу</a>
       </div>
@@ -272,9 +272,18 @@
           <span class="before-after__image-after "></span>
         </div>
 
+        <picture>
+          <source media="(min-width: 1300px)" srcset="../img/before-desktop@1x.png, ../img/before-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png, ../img/before-tablet@2x.png 2x">
+          <img class="before-after__image-before" src="../img/before-mobile@1x.png, ../img/before-mobile@2x.png 2x" alt="Было">
+        </picture>
 
-        <img class="before-after__image-before" src="../img/before-mobile@1x.png" width="320" height="240" alt="Было">
-        <img class="before-after__image-after hidden" src="../img/after-mobile@1x.png" width="311" height="232" alt="Стало">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="../img/after-desktop@1x.png, ../img/after-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="../img/after-tablet@1x.png, ../img/after-tablet@2x.png 2x">
+          <img class="before-after__image-after hidden" src="../img/after-mobile@1x.png, ../img/after-mobile@2x.png 2x" alt="Стало">
+        </picture>
+
         <fieldset class="before-after__radio-btn">
           <input type="radio" class="before-after__input visually-hidden" name="before-after" id="before" value="before">
           <label for="before" class="before-after__label">Было</label>

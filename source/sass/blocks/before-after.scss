@@ -104,11 +104,11 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 708px;
+    // width: 708px;
   }
 
   .before-after__text {
-    width: 708px;
+    // width: 708px;
 
     font-size: 16px;
     line-height: 24px;
@@ -157,27 +157,27 @@
   }
 
   .before-after__image-wrapper {
-    width: 708px;
+    width: 768px;
     height: 536px;
   }
 
-  .before-after__image-before {
-    background-image: url("../img/before-tablet@1x.png");
-    width: 690px;
-    height: 517px;
-    background-color: black;
+  // .before-after__image-before {
+  //   background-image: url("../img/before-tablet@1x.png");
+  //   width: 690px;
+  //   height: 517px;
+  //   background-color: black;
 
-    display: none;
-  }
+  //   display: none;
+  // }
 
-  .before-after__image-after {
-    background-image: url("../img/after-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 690px;
-    height: 519px;
-    background-color: black;
-  }
+  // .before-after__image-after {
+  //   background-image: url("../img/after-tablet@1x.png");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   width: 690px;
+  //   height: 519px;
+  //   background-color: black;
+  // }
 
   .before-after__input + .before-after__label::before {
     content: "";

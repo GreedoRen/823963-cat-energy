@@ -29,7 +29,8 @@
           <a class="main-nav__item-link main-nav__item-link--black" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-link main-nav__item-link--black main-nav__item-link--active" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__item-link main-nav__item-link--black main-nav__item-link--active" href="catalog.html">Каталог
+            продукции</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__item-link main-nav__item-link--black" href="form.html">Подбор программы</a>
@@ -47,7 +48,11 @@
       <ul class="catalog__list">
         <li class="product catalog__item catalog__item--1">
           <div class="product__item">
-            <img class="product__image" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Товар">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/chicken-small-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="../img/chicken-small-tablet@1x.png">
+              <img class="product__image" src="../img/chicken-small-mobile@1x.jpg" width="140" height="144" alt="Товар">
+            </picture>
             <div class="product__wrapper">
               <p class="product__name">Cat Energy PRO 500 г</p>
               <div class="product__table">

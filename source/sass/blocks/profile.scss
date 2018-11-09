@@ -61,6 +61,15 @@
   padding-right: 11px;
 }
 
+.profile__label--mail {
+  position: relative;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  // }
+}
+
 @media (min-width: $tablet) {
   .profile {
     width: 768px;
@@ -133,7 +142,8 @@
 
     width: 1300px;
     padding-top: 22px;
-    padding-left: 109px;
+    margin-left: -63px;
+    // padding-left: 109px;
   }
 
   .profile__wrapper-label {
@@ -167,6 +177,6 @@
 
   .profile__wrapper-label--phone {
     width: 63%;
-    padding-left: 153px;
+    padding-left: 134px;
   }
 }

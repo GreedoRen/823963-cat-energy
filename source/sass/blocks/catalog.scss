@@ -87,7 +87,7 @@
 
 @media (min-width: $tablet) {
   .catalog__list {
-    max-width: 768px;
+    // max-width: 768px;
 
     display: flex;
     flex-wrap: wrap;
@@ -157,12 +157,14 @@
 @media (min-width: $desktop) {
   .catalog__list {
     min-width: 1300px;
+    margin-left: -69px;
     // padding: 0 40px;
     // justify-content: space-around;
   }
 
   .catalog__item {
     width: 245px;
+    margin-top: 5px;
   }
 
   .catalog__title {
@@ -171,6 +173,7 @@
 
   .catalog__item:nth-child(2n) {
     padding-left: 0;
+    margin-top: -4px;
   }
 
   // .catalog__item--1 {
@@ -194,6 +197,6 @@
   }
 
   .catalog__item--add {
-    margin-top: -32px;
+    padding-top: 221px;
   }
 }

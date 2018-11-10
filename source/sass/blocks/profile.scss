@@ -14,6 +14,7 @@
 
 .profile__wrapper-label {
   padding-bottom: 14px;
+  position: relative;
 }
 
 .profile__input {
@@ -56,6 +57,17 @@
 .profile__input-phone {
   width: 192px;
 }
+
+.profile__input-svg {
+  position: absolute;
+  top: 10px;
+  left: 247px;
+}
+
+// .profile__input-svg--mail {
+//   top: 0;
+//   left: 0;
+// }
 
 .profile__label {
   padding-right: 11px;

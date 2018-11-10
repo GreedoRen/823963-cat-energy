@@ -14,6 +14,7 @@
 
 .profile__wrapper-label {
   padding-bottom: 14px;
+  position: relative;
 }
 
 .profile__input {
@@ -57,8 +58,28 @@
   width: 192px;
 }
 
+.profile__input-svg {
+  position: absolute;
+  top: 10px;
+  left: 247px;
+}
+
+// .profile__input-svg--mail {
+//   top: 0;
+//   left: 0;
+// }
+
 .profile__label {
   padding-right: 11px;
+}
+
+.profile__label--mail {
+  position: relative;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  // }
 }
 
 @media (min-width: $tablet) {
@@ -133,7 +154,8 @@
 
     width: 1300px;
     padding-top: 22px;
-    padding-left: 109px;
+    margin-left: -63px;
+    // padding-left: 109px;
   }
 
   .profile__wrapper-label {
@@ -167,6 +189,6 @@
 
   .profile__wrapper-label--phone {
     width: 63%;
-    padding-left: 153px;
+    padding-left: 134px;
   }
 }

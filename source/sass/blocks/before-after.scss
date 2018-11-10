@@ -1,6 +1,6 @@
 .before-after {
   background-color: #f2f2f2;
-  max-width: 320px;
+  // max-width: 320px;
 }
 
 .before-after__title {
@@ -32,22 +32,29 @@
 }
 
 .before-after__uppertext {
-  padding-bottom: 8px;
+  padding-bottom: 13px;
   padding-right: 5px;
+  padding-top: 13px;
 
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: #111111;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 124px;
 }
 
 .before-after__undertext {
-  padding-right: 10px;
+  margin-left: 33px;
+  margin-top: -7px;
 
   width: 60px;
   font-size: 12px;
   line-height: 12px;
   font-family: "Arial", "Helvetica", sans-serif;
+  background-color: #f2f2f2;
 }
 
 .before-after__cost {
@@ -91,11 +98,11 @@
 @media (min-width: $tablet) {
   .before-after {
     background-color: #ffffff;
-    width: 768px;
+    // width: 768px;
   }
 
   .before-after__title {
-    padding-top: 56px;
+    padding-top: 54px;
     margin-bottom: 49px;
     white-space: nowrap;
   }
@@ -104,11 +111,11 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 708px;
+    // width: 708px;
   }
 
   .before-after__text {
-    width: 708px;
+    // width: 708px;
 
     font-size: 16px;
     line-height: 24px;
@@ -116,12 +123,15 @@
 
   .before-after__weight-time {
     width: 50%;
-    padding-top: 26px;
+    padding-top: 14px;
+    padding-left: 61px;
   }
 
   .before-after__spent {
-    padding-left: 28px;
     padding-top: 10px;
+    margin-left: -3px;
+
+    text-align: inherit;
   }
 
   .before-after__cost {
@@ -141,8 +151,9 @@
   }
 
   .before-after__uppertext {
-    padding-right: 16px;
+    padding-right: 4px;
     padding-bottom: 12px;
+    width: 163px;
 
     font-size: 30px;
     line-height: 37.02px;
@@ -156,28 +167,28 @@
     line-height: 14px;
   }
 
-  .before-after__image-wrapper {
-    width: 708px;
-    height: 536px;
-  }
+  // .before-after__image-wrapper {
+  //   width: 768px;
+  //   height: 536px;
+  // }
 
-  .before-after__image-before {
-    background-image: url("../img/before-tablet@1x.png");
-    width: 690px;
-    height: 517px;
-    background-color: black;
+  // .before-after__image-before {
+  //   background-image: url("../img/before-tablet@1x.png");
+  //   width: 690px;
+  //   height: 517px;
+  //   background-color: black;
 
-    display: none;
-  }
+  //   display: none;
+  // }
 
-  .before-after__image-after {
-    background-image: url("../img/after-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 690px;
-    height: 519px;
-    background-color: black;
-  }
+  // .before-after__image-after {
+  //   background-image: url("../img/after-tablet@1x.png");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   width: 690px;
+  //   height: 519px;
+  //   background-color: black;
+  // }
 
   .before-after__input + .before-after__label::before {
     content: "";

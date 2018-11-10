@@ -16,7 +16,7 @@
 
 .before-after__weight-time {
   padding: 0;
-  padding-top: 24px;
+  padding-top: 11px;
   padding-bottom: 7px;
 
   list-style: none;
@@ -27,13 +27,18 @@
 .before-after__spent {
   display: flex;
   flex-direction: column;
+  margin-left: -10px;
 
   text-align: center;
 }
 
+.before-after__spent--day {
+  padding-left: 45px;
+}
+
 .before-after__uppertext {
   padding-bottom: 13px;
-  padding-right: 5px;
+  // padding-right: 5px;
   padding-top: 13px;
 
   font-size: 24px;
@@ -43,7 +48,7 @@
 
   border: 1px solid grey;
   border-radius: 5px;
-  width: 124px;
+  width: 117px;
 }
 
 .before-after__undertext {
@@ -107,6 +112,10 @@
     white-space: nowrap;
   }
 
+  .before-after__wrapper-first {
+    margin-bottom: -31px;
+  }
+
   .before-after__wrapper-out {
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +133,7 @@
   .before-after__weight-time {
     width: 50%;
     padding-top: 14px;
-    padding-left: 61px;
+    padding-left: 18px;
   }
 
   .before-after__spent {
@@ -151,20 +160,25 @@
   }
 
   .before-after__uppertext {
-    padding-right: 4px;
+    // padding-right: 4px;
     padding-bottom: 12px;
     width: 163px;
 
     font-size: 30px;
     line-height: 37.02px;
     text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
   }
 
   .before-after__undertext {
-    width: 174px;
+    width: 131px;
+    margin-left: 24px;
+    margin-top: -3px;
 
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
   }
 
   // .before-after__image-wrapper {

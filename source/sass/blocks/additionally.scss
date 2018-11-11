@@ -96,6 +96,22 @@
   .additionally__item--vitamins {
     margin-left: -39px;
   }
+
+  .additionally__input + .additionally__label::before {
+    width: 40px;
+    height: 40px;
+
+    top: -9px;
+    left: -5px;
+  }
+
+  .additionally__input:checked + .additionally__label::before {
+    width: 40px;
+    height: 40px;
+
+    top: -9px;
+    left: -5px;
+  }
   // .additionally__input--sweetener {
   //   margin-bottom: 29px;
   // }

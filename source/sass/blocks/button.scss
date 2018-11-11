@@ -45,6 +45,7 @@
 .button--extra {
   min-width: 280px;
   display: block;
+  margin-top: 2px;
 
   text-align: center;
 }
@@ -80,6 +81,10 @@
     margin-left: 39px;
     display: inline-block;
   }
+
+  // .button--catalog:nth-child(even) {
+  //   margin-left: 39px;
+  // }
 }
 
 @media (min-width: $desktop) {
@@ -94,7 +99,7 @@
 
   .button--catalog {
     min-width: 170px;
-    margin-left: 2px;
+    margin-left: 23px;
     margin-top: 41px;
 
     height: 40px;

@@ -84,7 +84,7 @@
 
 .product__name--extra {
   width: 100%;
-  padding-top: 5px;
+  padding-top: 4px;
   padding-left: 1px;
 
   line-height: 16px;
@@ -114,6 +114,22 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 435px;
+
+      background-color: #f2f2f2;
+
+      top: 30%;
+      left: 0;
+
+      z-index: -1;
+    }
   }
 
   .product__item--2,
@@ -151,12 +167,23 @@
     width: 324px;
   }
 
+  .product__wrapper:nth-child(2n) {
+    width: 324px;
+  }
+  // .product__picture:nth-child(even) {
+  //   margin-top: -35px;
+  // }
+
   .product__image {
     min-height: 200px;
     // padding-bottom: 55px;
     margin-top: 100px;
     margin-bottom: -45px;
   }
+
+  // .product__image:nth-child(2n) {
+  //   margin-left: 10px;
+  // }
 
   .product__column {
     font-size: 16px;
@@ -201,8 +228,9 @@
   }
 
   .product--extra {
-    margin-bottom: -27px;
+    margin-bottom: -28px;
     padding-bottom: 0;
+    margin-top: -6px;
   }
 
   .product__wrapper-extra {
@@ -237,27 +265,45 @@
     flex-direction: column;
     align-items: center;
     width: 20%;
-    margin-left: 64px;
+    margin-left: 49px;
   }
 
   .product__table {
     min-width: 245px;
-    margin-left: -12px;
+    margin-left: 2px;
+  }
+
+  .product__image {
+    margin-top: 74px;
+    margin-bottom: 0;
   }
 
   .product__item {
     padding: 0;
     width: 245px;
     background-color: #f2f2f2;
+
+    &::before {
+      top: 30%;
+      left: 0;
+    }
   }
 
-  .product__picture--tablet {
-    margin-left: 20px;
-  }
+  // .product__picture--tablet {
+  //   margin-left: 20px;
+  // }
 
   .product__name {
     width: 366px;
-    padding-left: 158px;
+    padding-left: 182px;
+    padding-top: 0;
+    margin-top: 31px;
+  }
+
+  .product__item--2,
+  .product__item--4,
+  .product__item--6 {
+    padding-left: 0;
   }
 
   .product__column--first {
@@ -277,6 +323,8 @@
 
   .product__item--extra {
     padding-top: 0;
+    padding-bottom: 14px;
+    margin-top: -9px;
     min-width: 650px;
   }
 

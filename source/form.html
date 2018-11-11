@@ -6,13 +6,15 @@
   <title>HTML Academy: Анкета Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
   <div style="display: none">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+    <include src="build/img/sprite/svg/symbols.svg"></include>
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
 
       <symbol id="htmlacademy" viewBox="0 0 60 60">
         <path fill="#2E368F" d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"></path>
@@ -152,18 +154,23 @@
         <path class="st4" d="M120.8 23.3h5.8v1.5h-3.7v4.9h3v1.5h-3v5.5h3.7v1.5h-5.8V23.3zM128.3 23.3h1.4l4.2 9.9v-9.9h1.7v14.9h-1.3L130.1 28v10.2h-1.8V23.3zM138 23.3h5.8v1.5h-3.7v4.9h3v1.5h-3v5.5h3.7v1.5H138V23.3zM145.5 23.3h3c1.5 0 2.6.3 3.3.9.7.6 1.1 1.6 1.1 3 0 1.9-.6 3.1-1.8 3.5l2.1 7.5h-2l-2-7h-1.6v7h-2.1V23.3zm2.9 6.4c.9 0 1.5-.2 1.9-.5.4-.4.6-1 .6-1.9 0-.6-.1-1.1-.2-1.4-.1-.3-.4-.6-.7-.8-.3-.2-.8-.2-1.5-.2h-.9v4.9h.8zM155.7 37.1c-.6-.9-.9-2.1-.9-3.8v-5c0-1.2.1-2.1.4-2.8.2-.7.7-1.3 1.2-1.7.6-.4 1.4-.6 2.4-.6 1.4 0 2.4.3 3 1 .6.7.9 1.8.9 3.3v.6h-2v-.5c0-.7 0-1.3-.1-1.6-.1-.4-.3-.7-.5-.9-.3-.2-.7-.3-1.2-.3-.6 0-1 .1-1.3.4-.3.3-.5.6-.5 1.1-.1.4-.1 1-.1 1.8v5.5c0 1.1.1 2 .4 2.5.3.5.8.7 1.6.7s1.3-.3 1.6-.8c.3-.5.4-1.4.4-2.6v-1h-2v-1.5h3.8v7.4h-1.3l-.2-1.7c-.5 1.3-1.4 1.9-2.7 1.9-1.3-.1-2.3-.5-2.9-1.4zM167.1 32.9l-3.2-9.6h1.9l2.3 7.2 2.2-7.2h2l-3.2 9.6v5.3h-2v-5.3z"></path>
       </symbol>
 
-    </svg>
+    </svg> -->
 
   </div>
 
   <header class="page-header container">
     <div class="page-header__top-wrapper">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image page-header__logo-image--mobile" src="../img/logo-mobile.svg" width="200"
-          height="45" alt="Кэт-Энерджи">
-        <img class="page-header__logo-image page-header__logo-image--tablet" src="../img/logo-tablet.svg">
-        <img class="page-header__logo-image page-header__logo-image--desktop" src="../img/logo-desktop.svg">
-      </a>
+        <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
+              <img src="../img/logo-mobile.svg" width="226" height="30" alt="Кэт-Энерджи">
+            </picture>
+            <!-- <img class="page-header__logo-image page-header__logo-image--mobile" src="../img/logo-mobile.svg" width="200"
+              height="45" alt="Кэт-Энерджи">
+            <img class="page-header__logo-image page-header__logo-image--tablet" src="../img/logo-tablet.svg">
+            <img class="page-header__logo-image page-header__logo-image--desktop" src="../img/logo-desktop.svg"> -->
+          </a>
       <button class="page-header__toggle" type="button">
         <img src="../img/icon-mobile-menu.svg" width="24px" height="18px" alt="Открыть меню">
       </button>

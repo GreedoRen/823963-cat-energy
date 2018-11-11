@@ -87,10 +87,10 @@
 
 @media (min-width: $tablet) {
   .catalog__list {
-    // max-width: 768px;
-
     display: flex;
     flex-wrap: wrap;
+
+    margin-top: 116px;
   }
 
   .catalog__title {
@@ -99,7 +99,9 @@
 
   .catalog__item {
     width: 324px;
-    min-height: 540px;
+    min-height: 525px;
+
+    padding-top: 0;
 
     // padding-left: 97px;
   }
@@ -126,7 +128,7 @@
   .catalog__item--add {
     width: 335px;
     margin-left: 45px;
-    padding-top: 240px;
+    padding-top: 151px;
 
     text-align: center;
   }

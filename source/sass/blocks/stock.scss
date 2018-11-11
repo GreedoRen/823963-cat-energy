@@ -6,24 +6,13 @@
   // margin: 0 auto;
   margin-top: 28px;
   margin-bottom: 7px;
+  padding-top: 65px;
+  padding-bottom: 25px;
 
   background-color: #67ab3e;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 60px;
-    position: absolute;
-    background-image: url("../../img/icon-gift.svg");
-    top: 23%;
-    left: 40%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
 }
 
 .stock__link {
@@ -35,14 +24,20 @@
 
 .stock__text {
   width: 170px;
-  margin-top: 67%;
-  margin-left: 4%;
+  // margin-top: 67%;
+  // margin-left: 4%;
 
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial", "Helvetica", sans-serif;
   color: #ffffff;
   text-align: center;
+}
+
+.stock__svg {
+  fill: white;
+  margin: 0 auto 46px;
+  display: block;
 }
 
 @media (min-width: $tablet) {

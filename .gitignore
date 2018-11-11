@@ -11,3 +11,5 @@ npm-debug.*
 source/css/*.css
 Thumbs.db
 source/img/sprite/svg/symbols.svg
+
+build/
